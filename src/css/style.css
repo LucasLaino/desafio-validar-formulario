@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+main {
+    background-image: url(../images/background-image.jpg);
+    background-size: contain;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duvidas {
+    color: #fff;
+    max-width: 50rem;
+    max-height: 10rem;
+    margin: 6rem;
+}
+
+.duvidas .titulo {
+    font-size: 4rem;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+
+.duvidas .texto {
+    font-size: 2rem;
+}
+
+.container-inputs {
+    background-color: #fff;
+    min-width: 45rem;
+    max-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.input {
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    width: 40rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.container-inputs .btn-enviar-formulario {
+    background-color: #3CCC87;
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.campo-preenchido {
+    border: 1px solid #3CCC87;
+}
+
+.campo-nao-preenchido {
+    border: 1px solid #ff0000;
+}
+
+.campo-obrigatorio {
+    color: #ff0000;
+    display: none;
+}
