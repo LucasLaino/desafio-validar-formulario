@@ -1,70 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-main {
-    background-image: url(../images/background-image.jpg);
-    background-size: contain;
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.formulario {
+   background-image: url(../images/background-image.jpg);
+   background-size: contain;
+   min-height: 100vh;
+   min-width: 100vw;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 5rem;
 }
 
-.duvidas {
+.formulario .duvidas {
     color: #fff;
-    max-width: 50rem;
-    max-height: 10rem;
-    margin: 6rem;
+    max-width: 45rem;
 }
 
-.duvidas .titulo {
+.formulario .duvidas .titulo {
     font-size: 4rem;
     font-weight: 900;
-    padding-bottom: 1rem;
 }
 
-.duvidas .texto {
+.formulario .duvidas .texto {
     font-size: 2rem;
+    padding-top: 2rem;
 }
 
-.container-inputs {
+.formulario .container-campos {
     background-color: #fff;
-    min-width: 45rem;
-    max-height: 50rem;
+    width: 45rem;
+    height: 45rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
-    padding: 2rem;
+    padding-top: 2rem;
 }
 
-.input {
-    border: 1px solid #000;
-    border-radius: 0.5rem;
-    width: 40rem;
-    padding: 1rem;
+.container-campos .campo, .text-area {
+   border: 1px solid #000;
+   border-radius: 5px;
+   width: 35rem;
+   padding: 1rem;
+}
+
+.container-campos .campo {
+    height: 3.5rem;
+}
+
+.container-campos .text-area {
+    height: 10rem;
     resize: none;
 }
 
-.container-inputs .btn-enviar-formulario {
+.container-campos .btn-enviar-formulario {
     background-color: #3CCC87;
-    border-radius: 0.5rem;
-    border: none;
+    border-radius: 5px;
     color: #fff;
-    text-align: center;
-    font-weight: 700;
-    margin-top: 2rem;
+    width: 35rem;
+    height: 4rem;
     cursor: pointer;
 }
 
-.campo-preenchido {
+.container-campos .campo-valido {
     border: 1px solid #3CCC87;
 }
 
-.campo-nao-preenchido {
+.container-campos .campo-invalido {
     border: 1px solid #ff0000;
 }
 
-.campo-obrigatorio {
-    color: #ff0000;
+.container-campos .campo-obrigatorio {
     display: none;
+}
+
+.container-campos .mostar-campo-obrigatorio {
+    color: #ff0000;
+    font-size: 1.2rem;
+    display: block;
 }
