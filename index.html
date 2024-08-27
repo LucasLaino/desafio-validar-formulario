@@ -12,41 +12,37 @@
 </head>
 
 <body>
-    <main class="formulario">
+    <main>
         <section class="duvidas">
-            <h1 class="titulo">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+            <h1 class="titulo">Ficou com dúvida? Nos mande uma mensagem!</h1>
 
             <p class="texto">Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato
                 em menos de 24h.</p>
         </section>
 
-        <form class="container-campos">
-            <div>
-            <input type="text" name="nome" placeholder="Nome completo *" class="campo">
-            <p class="campo-obrigatorio">campo obrigatório</p>
-            </div>
+        <form class="fomulario">
 
-            <div>
-            <input type="email" name="email" placeholder="Email *" class="campo">
-            <p class="campo-obrigatorio">campo obrigatório</p>
-            </div>
+           <section class="campos-do-formulario">
+                <input type="text" name="nome" placeholder="Nome completo *" class="campo">
+                <p class="campo-obrigatorio">campo obrigatório</p>
 
-            <div>
-            <input type="tel" name="telefone" placeholder="Telefone *" class="campo">
-            <p class="campo-obrigatorio">campo obrigatório</p>          
-            </div>
+                <input type="email" name="email" placeholder="Email *" class="campo">
+                <p class="campo-obrigatorio">campo obrigatório</p>
 
-            <div>
-            <textarea name="mensagem" placeholder="Mensagem *" class="campo text-area"></textarea>
-            <p class="campo-obrigatorio">campo obrigatório</p>
-            <p>*campos obrigatórios</p>
-            </div>
+                <input type="tel" name="telefone" placeholder="Telefone *" class="campo">
+                <p class="campo-obrigatorio">campo obrigatório</p>          
 
+                <textarea name="mensagem" placeholder="Mensagem *" class="campo text-area"></textarea>
+                <p class="campo-obrigatorio">campo obrigatório</p>
+            
+                <p>*campos obrigatórios</p>           
+            </section>
 
-            <button class="btn-enviar-formulario" id="btn-enviar-formulario" type="submit">Enviar</button>
+                <button class="btn-enviar-formulario" id="btn-enviar-formulario" type="submit">Enviar</button>
         </form>
     </main>
+    
+    <script src="./src/js/index.js"></script>
 </body>
 
-<script src="./src/js/index.js"></script>
 </html>

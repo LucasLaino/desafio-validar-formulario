@@ -1,0 +1,17 @@
+@media (max-width: 425px) {
+    main {
+        flex-direction: column;
+    }
+    
+    main .duvidas .titulo {
+        font-size: 3rem;
+    }
+
+    main .duvidas .titulo, .texto {
+        text-align: center;
+    }
+
+    main .duvidas .texto {
+        font-size: 1.8rem;
+    }
+}
